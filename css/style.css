@@ -41,8 +41,8 @@ section#login {
 
     overflow: hidden;
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
     transition: width 0.3s, height 0.3s;
@@ -61,4 +61,45 @@ section#login > div#imagem {
 section#login > div#form {
     display: block;
     padding: 15px;
+    
 }
+
+section#login > div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+section#login > div#form > p  {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+div.campo {
+    background-color:#6553A6;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: white;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    background-color: #2DA690 ;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 1em;
+    transition: all .2s;
+    margin-bottom: 3px;
+}
+    .button:hover {
+        background-color: #1f7061;
+        cursor: pointer;
+        transition: all .2s;
+    }
