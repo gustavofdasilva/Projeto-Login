@@ -37,8 +37,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
     overflow: hidden;
     background-color: white;
     width: 300px;
@@ -46,8 +44,8 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
     transition: width 0.3s, height 0.3s;
-
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);
 }
 
 section#login > div#imagem {
@@ -77,6 +75,7 @@ section#login > div#form > p  {
 
 div.campo {
     background-color:#6553A6;
+    border: 3px solid #6553A6;
     width: 100%;
     display: block;
     height: 40px;
@@ -95,11 +94,40 @@ div.campo {
     padding: 5px;
     color: white;
     font-size: 1em;
-    transition: all .2s;
+        transition: all .2s;
     margin-bottom: 3px;
 }
     .button:hover {
         background-color: #1f7061;
         cursor: pointer;
+        transition: all .2s;
+    }
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #83cabd;
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transition: all .2s;
+
+    transform: translateY(-14.5px);
+    /*Sempre deixe configurações de transformação e animação na ultima linha do seletor!!!*/
+}
+    div.campo > input:focus-within {
+        background-color: white;
         transition: all .2s;
     }
